@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "EditEmail";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<div class="postbox" style="float:right;width:490px;">
+    <div style="text-align:center;@ViewBag.style;">@ViewBag.message</div>
+    <!--post-->
+    <div class="shortstory">
+        
+        @{
+            NewsWeb.Models.Domain.DataBaseNews db=new NewsWeb.Models.Domain.DataBaseNews();
+            string u=Session["UserName"].ToString();
+            var q = (from a in db.Tbl_Users
+                    where a.UserName.Equals(u)
+                    select a).SingleOrDefault();
+        }
+
+       @using (@Html.BeginForm("EditEmail", "Admin", FormMethod.Post))
+        {
+        <table>
+            <tr>
+                <td>ایمیل</td>
+                <td><input type="text" name="Txt_Email" value="@q.Email" /></td>
+                <td><input type="submit" value="ذخیره" /></td>
+            </tr>
+        </table>
+        }
+
+        <div class="cls"></div>
+    </div>
+    <!--end_post-->
+
+</div>
+

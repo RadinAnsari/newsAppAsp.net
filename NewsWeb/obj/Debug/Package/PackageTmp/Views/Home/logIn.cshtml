@@ -1,0 +1,69 @@
+﻿@{
+    Layout = null;
+}
+@using CaptchaMvc;
+@using CaptchaMvc.HtmlHelpers
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-2.1.3.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <title>logIn</title>
+</head>
+<body>
+    <div style="text-align:center;margin:20%;font-family:Tahoma;padding:20px;margin-left:40%;">
+
+        <div style="@ViewBag.style;">
+            @ViewBag.Message
+        </div>
+        @using (Html.BeginForm("logIn", "Home", FormMethod.Post))
+        {
+            <table dir="rtl">
+                <tr>
+                    <td>نام کاربی</td>
+                    <td><input type="text" name="Txt_UserName" value="" /></td>
+                </tr>
+                <tr>
+                    <td>کلمه عبور</td>
+                    <td><input type="password" name="Txt_Psw" value="" /></td>
+                </tr>
+                <tr>
+                    <td>کد امنیتی</td>
+                    <td>
+                        @{
+            var captcha = @Html.Captcha("refresh", "Enter the text shown in imag"
+                        , 5, "Is required field.", false);
+                        }
+
+                        @captcha.RenderMarkup()
+
+                        @section scripts
+{
+                            @captcha.RenderScript()
+                        }
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <br />
+                        <button type="submit">ورود</button>
+                    </td>
+                </tr>
+            </table>
+        }
+
+    </div>
+</body>
+</html>
+<script>
+    $('#refresh').click(function () {
+
+        var d = new Date();
+        $("#CaptchaImage").attr("src", "Captcha/CaptchaImage?" + d.getTime());
+
+    });
+</script>

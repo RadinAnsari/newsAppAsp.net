@@ -1,0 +1,193 @@
+﻿@model NewsWeb.Models.Domain.Tbl_News
+
+@{
+    ViewBag.Title = "News";
+    Layout = "~/Views/Shared/_index.cshtml";
+    NewsWeb.Models.Repository.Rep_Comment rComment = new NewsWeb.Models.Repository.Rep_Comment();
+    <link href="~/Content/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+}
+<div style="width:100%;font-family:Tahoma;text-align:center;">
+    <p style="color: black; font-size: 10px; margin-bottom: 10px;">
+        @Html.DisplayFor(a => a.HeadTitle)
+    </p>
+    <p style="color:blue;font-size:16px;font-weight:700">
+        @Html.DisplayFor(a => a.Title)
+    </p>
+</div>
+<div style="width:538px;background-color:#808080;border-top:solid 1px black;border-bottom:solid 1px black;padding:10px;line-height:15px;">
+    @Html.DisplayFor(a => a.Text)
+</div>
+
+<div style="width: 150px; float: left; background-color: #e9dbdb; direction: ltr; margin-left: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 25px;">
+    <table>
+
+        <tr>
+            <td style="padding-left:10px;cursor:pointer;color:green;" onclick="Like(@Model.Id)" class="glyphicon glyphicon-thumbs-up"></td>
+            <td><span id="LikeNews">@Html.DisplayFor(a => a.Like)</span></td>
+
+        </tr>
+        <tr>
+            <td style="padding-left:10px;" onclick="Dislike(@Model.Id)"><span class="glyphicon glyphicon-thumbs-down" style="cursor:pointer;color:red;" aria-hidden="true"></span></td>
+            <td><span id="DisLikeNews">@Html.DisplayFor(a => a.DisLike)</span></td>
+            @*<td style="padding-left:10px;">@Ajax.ActionLink("-", "NewsDisLike", new { id = Model.Id }, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "DisLikeNews" })</td>*@
+
+        </tr>
+    </table>
+
+</div>
+<br />
+<br />
+<br />
+<br />
+<div>
+    <div style=" text-align:right;float:right;width:150px;"> کد خبر : @Html.DisplayFor(a => a.Id)</div>
+    <div style="text-align :left;float:left;width:250px;"><span class="glyphicon glyphicon-calendar"></span> @Html.DisplayFor(a => a.Date)</div>
+    <div style=" text-align:left;float:left;width:94px;"> <span class="glyphicon glyphicon-eye-open"></span> @Html.DisplayFor(a => a.Visit)</div>
+</div>
+
+<div style="width:538px;font-family:Tahoma;font-size:12px;line-height:20px;direction:rtl;margin-top:35px;">
+    @*@Html.DisplayFor(a => a.FullText)*@
+    @Html.Raw(Model.FullText)
+</div>
+
+<!--comment-->
+<!--Style comments-->
+<style>
+    .CommentMain {
+        width: 540px;
+        margin: 10px;
+        padding: 5px;
+        font-size: 12px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        float: right;
+    }
+
+    .CommentAns {
+        width: 500px;
+        margin: 8px;
+        margin-right: 20px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        float: right;
+        padding: 5px;
+    }
+</style>
+<div>
+    @{
+        int counter = 0;
+        if(rComment.getCommrnts(Model.Id)!=null)
+        {
+             foreach (var item in rComment.getCommrnts(Model.Id))
+        {
+            counter++;
+
+            <div class="CommentMain">
+                <div style="float:right;width:100%;margin-bottom:5px;">
+                    عنوان :@item.Title
+                </div>
+                <div style="float:right;width:100px;">
+                    نام :@item.Name
+                </div>
+                <div style="float:right;width:200px;margin-bottom:10px;margin-right:40px;">
+                    ایمیل :@item.Email
+                </div>
+                <div style="float:right;width:100%;">
+                    @item.Text
+                </div>
+                <table>
+                    <tr style="font-size:12px;">
+                        <td style=" color:green;">like</td>
+                        <td><span id="Like@(counter)">@item.Like</span></td>
+                        <td style="padding-left:10px;">@Ajax.ActionLink("+", "CommentLike", new { Id = item.Id }, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "Like" + counter })</td>
+                    </tr>
+                    <tr style="font-size:12px;">
+                        <td style=" color:red;">Dislike</td>
+                        <td><span id="DisLike@(counter)">@item.Dislike</span></td>
+                        <td style="padding-left:10px;">@Ajax.ActionLink("-", "CommentDisLike", new { Id = item.Id }, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "DisLike" + counter })</td>
+                    </tr>
+                </table>
+
+            </div>
+        }
+        }
+       
+    }
+
+</div>
+
+<div style="padding:5px;border:1px solid #808080">
+    @using (Html.BeginForm("InsertComment", "Home", FormMethod.Get))
+    {
+        <table>
+            <tr>
+
+                <td>نام</td>
+                <td><input type="text" name="Name" value="" /></td>
+            </tr>
+            <tr>
+                <td>ایمیل</td>
+                <td><input type="text" name="Email" value="" /></td>
+            </tr>
+            <tr>
+                <td>عنوان</td>
+                <td><input type="text" name="Title" value="" /></td>
+            </tr>
+            <tr>
+                <td>متن</td>
+                <td><textarea name="Text" style="max-width:500px;min-width:350px;min-height:200px;"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="ارسال نظر" /></td>
+                <td><input type="hidden" name="NewsId" value="@Model.Id" /></td>
+            </tr>
+        </table>
+    }
+
+</div>
+
+<script language="javascript" type="text/javascript">
+    function Like(id) {
+
+        //like
+        $.ajax({
+            url: '@Url.Action("NewsLike", new { id=Model.Id })',
+            data: { id: id },
+            method: 'Post',
+            success: function (data) {
+
+                document.getElementById("LikeNews").innerHTML = data[0];
+                document.getElementById("DisLikeNews").innerHTML = data[1];
+                alert("call is successfully completed and we got result in data");
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                //some errror, some show err msg to user and log the error
+                alert(xhr.responseText);
+
+            }
+        });
+
+    }
+
+    function Dislike(id) {
+        $.ajax({
+            url: '@Url.Action("NewsDisLike", new { id = Model.Id })',
+            data: { id: id },
+            method: 'Post',
+            success: function (data) {
+                document.getElementById("LikeNews").innerHTML =  data[0];
+                document.getElementById("DisLikeNews").innerHTML = data[1];
+                alert("call is successfully completed and we got result in data");
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                //some errror, some show err msg to user and log the error
+                alert(xhr.responseText);
+
+            }
+        });
+
+    };
+
+
+
+</script>

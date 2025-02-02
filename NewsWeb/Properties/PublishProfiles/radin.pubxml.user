@@ -1,0 +1,2518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\MyWork\published-newsSite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CaptchaMvc.dll">
+      <publishTime>11/04/2013 08:29:00</publishTime>
+    </File>
+    <File Include="bin/CaptchaMvc.pdb">
+      <publishTime>11/04/2013 08:29:00</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/06/2017 20:56:39</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/06/2017 20:56:39</publishTime>
+    </File>
+    <File Include="bin/JetBrains.Annotations.dll">
+      <publishTime>10/20/2017 02:28:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/06/2017 20:54:31</publishTime>
+    </File>
+    <File Include="bin/NewsWeb.dll">
+      <publishTime>01/28/2018 09:43:50</publishTime>
+    </File>
+    <File Include="bin/NewsWeb.pdb">
+      <publishTime>01/28/2018 03:07:29</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/20/2017 02:28:28</publishTime>
+    </File>
+    <File Include="bin/PagedList.dll">
+      <publishTime>10/06/2017 21:00:35</publishTime>
+    </File>
+    <File Include="bin/PagedList.Mvc.dll">
+      <publishTime>10/06/2017 21:00:35</publishTime>
+    </File>
+    <File Include="bin/reCaptcha.dll">
+      <publishTime>10/20/2017 02:28:29</publishTime>
+    </File>
+    <File Include="bin/reCaptcha.pdb">
+      <publishTime>10/20/2017 02:28:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/06/2017 20:54:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/06/2017 20:54:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/06/2017 20:53:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/06/2017 20:54:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/06/2017 20:54:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/06/2017 20:54:31</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>10/20/2017 02:28:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/.editorconfig">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/.gitattributes">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/.gitignore">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/.hound.yml">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/.travis.yml">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/bower.json">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/CHANGELOG.md">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/CNAME">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/composer.json">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/CONTRIBUTING.md">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap-theme.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap-theme.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/css/bootstrap.min.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/js/bootstrap.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/js/bootstrap.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/dist/js/npm.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/about.html">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/apple-touch-icon.png">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/brand/bootstrap-outline.svg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/brand/bootstrap-punchout.svg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/brand/bootstrap-solid.svg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/css/docs.min.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/css/docs.min.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/css/ie10-viewport-bug-workaround.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/css/src/docs.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/css/src/pygments-manni.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/flash/ZeroClipboard.swf">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/img/components.png">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/img/devices.png">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/img/expo-lyft.jpg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/img/expo-newsweek.jpg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/img/expo-riot.jpg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/img/expo-vogue.jpg">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/img/sass-less.png">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/customize.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/docs.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/ie8-responsive-file-warning.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/raw-files.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/src/application.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/src/customizer.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/anchor.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/autoprefixer.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/Blob.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/FileSaver.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/holder.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/jszip.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/less.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/uglify.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/assets/js/vendor/ZeroClipboard.min.js">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/browser-bugs.html">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/components.html">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/css.html">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/customize.html">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap.css">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap.css.map">
+      <publishTime>11/10/2017 03:44:57</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css.map">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/js/bootstrap.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/dist/js/npm.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/blog/blog.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/blog/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/carousel/carousel.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/carousel/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/cover/cover.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/cover/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/dashboard/dashboard.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/dashboard/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/grid/grid.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/grid/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/jumbotron-narrow/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/jumbotron-narrow/jumbotron-narrow.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/jumbotron/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/jumbotron/jumbotron.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/justified-nav/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/justified-nav/justified-nav.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/navbar-fixed-top/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/navbar-fixed-top/navbar-fixed-top.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/navbar-static-top/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/navbar-static-top/navbar-static-top.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/navbar/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/navbar/navbar.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/non-responsive/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/non-responsive/non-responsive.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/offcanvas/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/offcanvas/offcanvas.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/offcanvas/offcanvas.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/blog.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/carousel.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/cover.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/dashboard.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/equal-height-columns.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/grid.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/jumbotron-narrow.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/jumbotron.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/justified-nav.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/navbar-fixed.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/navbar-static.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/navbar.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/non-responsive.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/offcanvas.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/sign-in.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/starter-template.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/sticky-footer-navbar.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/sticky-footer.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/screenshots/theme.jpg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/signin/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/signin/signin.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/starter-template/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/starter-template/starter-template.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/sticky-footer-navbar/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/sticky-footer/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/sticky-footer/sticky-footer.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/theme/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/theme/theme.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/tooltip-viewport/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/tooltip-viewport/tooltip-viewport.css">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/examples/tooltip-viewport/tooltip-viewport.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/favicon.ico">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/getting-started.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/javascript.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/LICENSE">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/migration.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/robots.txt">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_data/browser-bugs.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_data/browser-features.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_data/core-team.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_data/glyphicons.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_data/sass-team.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_data/showcase.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_data/translations.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/ads.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/alerts.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/badges.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/breadcrumbs.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/button-dropdowns.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/button-groups.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/dropdowns.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/glyphicons.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/input-groups.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/jumbotron.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/labels.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/list-group.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/media.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/navbar.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/navs.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/page-header.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/pagination.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/panels.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/progress-bars.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/responsive-embed.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/thumbnails.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/components/wells.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/buttons.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/code.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/forms.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/grid.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/helpers.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/images.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/less.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/overview.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/responsive-utilities.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/sass.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/tables.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/css/type.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/customizer-variables.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/footer.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/accessibility.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/browser-device-support.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/community.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/disabling-responsiveness.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/download.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/examples.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/grunt.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/license.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/template.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/third-party-support.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/tools.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/translations.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/getting-started/whats-included.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/header.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/affix.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/alerts.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/buttons.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/carousel.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/collapse.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/dropdowns.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/modal.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/overview.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/popovers.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/scrollspy.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/tabs.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/tooltips.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/js/transitions.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/about.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/components.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/css.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/customize.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/getting-started.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/javascript.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/main.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_includes/nav/migration.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_layouts/default.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_layouts/home.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_plugins/bridge.rb">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_plugins/bugify.rb">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_pug/customizer-nav.pug">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/docs/_pug/customizer-variables.pug">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/Gemfile">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/Gemfile.lock">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/.jshintrc">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/bs-commonjs-generator.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/bs-glyphicons-data-generator.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/bs-lessdoc-parser.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/bs-raw-files-generator.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/change-version.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/configBridge.json">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/npm-shrinkwrap.json">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/grunt/sauce_browsers.yml">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/Gruntfile.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/ISSUE_TEMPLATE.md">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/.jscsrc">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/.jshintrc">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/affix.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/alert.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/button.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/carousel.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/collapse.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/dropdown.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/modal.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/popover.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/scrollspy.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tab.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/index.html">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/README.md">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/.jshintrc">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/affix.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/alert.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/button.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/carousel.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/collapse.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/dropdown.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/modal.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/phantom.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/popover.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/scrollspy.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/tab.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/unit/tooltip.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/vendor/jquery.min.js">
+      <publishTime>11/10/2017 03:44:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/vendor/qunit.css">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/vendor/qunit.js">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/affix-with-sticky-footer.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/affix.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/alert.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/button.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/carousel.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/collapse.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/dropdown.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/modal.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/popover.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/scrollspy.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/tab.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tests/visual/tooltip.html">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/tooltip.js">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/js/transition.js">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/.csscomb.json">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/.csslintrc">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/alerts.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/badges.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/bootstrap.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/breadcrumbs.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/button-groups.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/buttons.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/carousel.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/close.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/code.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/component-animations.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/dropdowns.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/forms.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/glyphicons.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/grid.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/input-groups.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/jumbotron.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/labels.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/list-group.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/media.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/alerts.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/background-variant.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/border-radius.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/buttons.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/center-block.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/clearfix.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/forms.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/gradients.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/grid-framework.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/grid.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/hide-text.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/image.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/labels.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/list-group.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/nav-divider.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/nav-vertical-align.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/opacity.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/pagination.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/panels.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/progress-bar.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/reset-filter.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/reset-text.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/resize.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/responsive-visibility.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/size.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/tab-focus.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/table-row.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/text-emphasis.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/text-overflow.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/mixins/vendor-prefixes.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/modals.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/navbar.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/navs.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/normalize.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/pager.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/pagination.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/panels.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/popovers.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/print.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/progress-bars.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/responsive-embed.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/responsive-utilities.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/scaffolding.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/tables.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/theme.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/thumbnails.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/tooltip.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/type.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/utilities.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/variables.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/less/wells.less">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/LICENSE">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/nuget/bootstrap.less.nuspec">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/nuget/bootstrap.nuspec">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/nuget/MyGet.ps1">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/package.js">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/package.json">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/README.md">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/bootstrap-3.3.7/_config.yml">
+      <publishTime>11/10/2017 03:44:59</publishTime>
+    </File>
+    <File Include="Content/img/109603_997.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/109835_297.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/109902_540.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/109986_192.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/109988_396.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/109991_841.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/bg.png">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/bgload.png">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/bgnews_top.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/bg_footer.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/bg_load.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/bg_news_top.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/CatPic/user-login-icon-29.png">
+      <publishTime>12/20/2017 06:53:05</publishTime>
+    </File>
+    <File Include="Content/img/Contact_us_logo.png">
+      <publishTime>10/18/2017 15:39:15</publishTime>
+    </File>
+    <File Include="Content/img/feedback.png">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/footer.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/header.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/header.png">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/home.png">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/ico_top.png">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/img_01-1.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/img_01-2.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/img_01-3.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/img_01-4.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/img_01.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/index.html">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/li-1.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/li-2.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/li-3.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/li-4.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/LogOut.png">
+      <publishTime>10/17/2017 23:55:28</publishTime>
+    </File>
+    <File Include="Content/img/n00134155-s.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/n00185162-t.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/n00185209-t.jpg">
+      <publishTime>10/06/2017 21:42:40</publishTime>
+    </File>
+    <File Include="Content/img/registration.png">
+      <publishTime>10/19/2017 22:25:31</publishTime>
+    </File>
+    <File Include="Content/img/rss.png">
+      <publishTime>10/06/2017 21:42:41</publishTime>
+    </File>
+    <File Include="Content/img/stu.gif">
+      <publishTime>10/06/2017 21:42:41</publishTime>
+    </File>
+    <File Include="Content/img/title-link.jpg">
+      <publishTime>10/06/2017 21:42:41</publishTime>
+    </File>
+    <File Include="Content/img/title-link2.jpg">
+      <publishTime>10/06/2017 21:42:41</publishTime>
+    </File>
+    <File Include="Content/img/UserPic/Admin.jpeg">
+      <publishTime>12/20/2017 07:20:25</publishTime>
+    </File>
+    <File Include="Content/PagedList.css">
+      <publishTime>10/06/2017 21:00:37</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>11/11/2017 03:27:07</publishTime>
+    </File>
+    <File Include="Content/Style2.css">
+      <publishTime>11/11/2017 03:25:48</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/06/2017 20:47:49</publishTime>
+    </File>
+    <File Include="Models/Domain/Model1.edmx.diagram">
+      <publishTime>01/28/2018 02:21:50</publishTime>
+    </File>
+    <File Include="Models/Repository/XSLTFile1.xslt">
+      <publishTime>10/07/2017 03:42:59</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/20/2017 02:28:36</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/adapters/jquery.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/CHANGES.html">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor.asp">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor.pack">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor.php">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor_basic.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor_basic_source.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor_php4.php">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor_php5.php">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/ckeditor_source.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/config.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/contents.css">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/images/spacer.gif">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/INSTALL.html">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/af.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ar.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/bg.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/bn.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/bs.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ca.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/cs.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/cy.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/da.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/de.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/el.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/en-au.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/en-ca.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/en-gb.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/en.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/eo.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/es.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/et.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/eu.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/fa.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/fi.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/fo.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/fr-ca.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/fr.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/gl.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/gu.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/he.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/hi.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/hr.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/hu.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/id.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/is.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/it.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ja.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ka.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/km.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ko.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/lt.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/lv.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/mk.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/mn.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ms.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/nb.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/nl.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/no.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/pl.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/pt-br.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/pt.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ro.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ru.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/sk.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/sl.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/sr-latn.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/sr.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/sv.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/th.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/tr.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/ug.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/uk.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/vi.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/zh-cn.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/zh.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/_languages.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/lang/_translationstatus.txt">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/LICENSE.html">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/cs.js">
+      <publishTime>10/22/2017 03:04:12</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/cy.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/da.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/de.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/el.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/en.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/eo.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/fa.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/fi.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/fr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/gu.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/he.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/it.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/mk.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/nb.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/nl.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/no.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/pt-br.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/ro.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/tr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/ug.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/vi.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/zh-cn.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/a11yhelp/lang/_translationstatus.txt">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/about/dialogs/about.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/about/dialogs/logo_ckeditor.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/adobeair/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/ajax/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/autogrow/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/bbcode/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/clipboard/dialogs/paste.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/colordialog/dialogs/colordialog.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/bg.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/cs.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/cy.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/da.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/de.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/el.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/en.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/eo.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/et.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/fa.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/fi.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/fr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/gu.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/he.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/hr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/it.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/nb.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/nl.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/no.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/pl.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/pt-br.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/tr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/ug.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/uk.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/vi.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/zh-cn.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/lang/_translationstatus.txt">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/devtools/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/dialog/dialogDefinition.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/div/dialogs/div.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/docprops/dialogs/docprops.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/docprops/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/find/dialogs/find.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/flash/dialogs/flash.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/flash/images/placeholder.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/button.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/checkbox.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/form.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/hiddenfield.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/radio.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/select.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/textarea.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/dialogs/textfield.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/forms/images/hiddenfield.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/iframe/dialogs/iframe.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/iframe/images/placeholder.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/iframedialog/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/image/dialogs/image.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/link/dialogs/anchor.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/link/dialogs/link.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/link/images/anchor.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/liststyle/dialogs/liststyle.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/pagebreak/images/pagebreak.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/pastefromword/filter/default.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/pastetext/dialogs/pastetext.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/dialogs/placeholder.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/bg.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/cs.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/cy.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/da.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/de.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/el.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/en.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/eo.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/et.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/fa.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/fi.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/fr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/he.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/hr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/it.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/nb.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/nl.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/no.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/pl.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/pt-br.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/tr.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/ug.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/uk.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/vi.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/zh-cn.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/lang/_translationstatus.txt">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/placeholder.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/placeholder/plugin.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/preview/preview.html">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/scayt/dialogs/options.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/scayt/dialogs/toolbar.css">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_address.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_blockquote.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_div.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_h1.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_h2.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_h3.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_h4.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_h5.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_h6.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_p.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/showblocks/images/block_pre.png">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/dialogs/smiley.js">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/angel_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/angry_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/broken_heart.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/confused_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/cry_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/devil_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/embaressed_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/envelope.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/heart.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/kiss.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/lightbulb.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/omg_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/regular_smile.gif">
+      <publishTime>10/22/2017 03:04:13</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/sad_smile.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/shades_smile.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/teeth_smile.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/thumbs_down.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/thumbs_up.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/tounge_smile.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/smiley/images/wink_smile.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/dialogs/specialchar.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/cs.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/cy.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/de.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/el.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/en.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/eo.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/et.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/fa.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/fi.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/fr.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/he.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/hr.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/it.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/nb.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/nl.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/no.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/pt-br.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/tr.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/ug.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/zh-cn.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/specialchar/lang/_translationstatus.txt">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/styles/styles/default.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/stylesheetparser/plugin.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/table/dialogs/table.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/tableresize/plugin.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/tabletools/dialogs/tableCell.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/templates/dialogs/templates.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/templates/templates/default.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/templates/templates/images/template1.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/templates/templates/images/template2.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/templates/templates/images/template3.gif">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/dialogs/uicolor.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/bg.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/cs.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/cy.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/da.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/de.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/el.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/en.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/eo.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/et.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/fa.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/fi.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/fr.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/he.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/hr.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/it.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/mk.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/nb.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/nl.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/no.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/pl.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/pt-br.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/tr.js">
+      <publishTime>10/22/2017 03:04:14</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/ug.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/uk.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/vi.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/zh-cn.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/lang/_translationstatus.txt">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/plugin.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/uicolor.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/yui/assets/hue_bg.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/yui/assets/picker_mask.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/yui/assets/yui.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/uicolor/yui/yui.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/wsc/dialogs/ciframe.html">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/wsc/dialogs/tmpFrameset.html">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/wsc/dialogs/wsc.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/wsc/dialogs/wsc.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/plugins/xml/plugin.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/dialog.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/editor.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/icons.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/icons_rtl.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/dialog_sides.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/dialog_sides.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/dialog_sides_rtl.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/mini.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/noimage.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/sprites.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/sprites_ie6.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/images/toolbar_start.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/skin.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/kama/templates.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/dialog.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/editor.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/icons.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/icons_rtl.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/images/dialog_sides.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/images/dialog_sides.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/images/dialog_sides_rtl.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/images/mini.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/images/noimage.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/images/sprites.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/images/sprites_ie6.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/skin.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/office2003/templates.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/dialog.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/editor.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/icons.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/icons_rtl.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/dialog_sides.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/dialog_sides.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/dialog_sides_rtl.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/mini.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/noimage.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/sprites.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/sprites_ie6.png">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/images/toolbar_start.gif">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/skin.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/skins/v2/templates.css">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/ckeditor/themes/default/theme.js">
+      <publishTime>10/22/2017 03:04:15</publishTime>
+    </File>
+    <File Include="Scripts/doc.js">
+      <publishTime>10/07/2017 13:12:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.3.min.js">
+      <publishTime>10/14/2017 01:54:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.min.js">
+      <publishTime>10/06/2017 20:57:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.min.map">
+      <publishTime>10/06/2017 20:57:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.slim.js">
+      <publishTime>10/06/2017 20:57:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.slim.min.js">
+      <publishTime>10/06/2017 20:57:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.2.1.slim.min.map">
+      <publishTime>10/06/2017 20:57:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>10/06/2017 20:59:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>10/06/2017 20:59:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>10/06/2017 21:31:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>10/06/2017 21:31:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>10/06/2017 21:31:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>10/06/2017 21:31:12</publishTime>
+    </File>
+    <File Include="Views/Admin/CreatCategory.cshtml">
+      <publishTime>11/02/2017 22:19:38</publishTime>
+    </File>
+    <File Include="Views/Admin/DetailsComment.cshtml">
+      <publishTime>10/27/2017 03:02:23</publishTime>
+    </File>
+    <File Include="Views/Admin/DetailsContact.cshtml">
+      <publishTime>11/04/2017 21:58:35</publishTime>
+    </File>
+    <File Include="Views/Admin/DetailsPost.cshtml">
+      <publishTime>11/12/2017 03:11:25</publishTime>
+    </File>
+    <File Include="Views/Admin/EditCategory.cshtml">
+      <publishTime>11/03/2017 17:44:18</publishTime>
+    </File>
+    <File Include="Views/Admin/EditEmail.cshtml">
+      <publishTime>10/20/2017 21:30:23</publishTime>
+    </File>
+    <File Include="Views/Admin/EditPassword.cshtml">
+      <publishTime>10/20/2017 18:09:47</publishTime>
+    </File>
+    <File Include="Views/Admin/EditPost.cshtml">
+      <publishTime>11/12/2017 00:33:37</publishTime>
+    </File>
+    <File Include="Views/Admin/EditUser.cshtml">
+      <publishTime>10/20/2017 17:54:48</publishTime>
+    </File>
+    <File Include="Views/Admin/Index.cshtml">
+      <publishTime>10/17/2017 22:03:45</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageCategory.cshtml">
+      <publishTime>11/12/2017 00:44:31</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageComment.cshtml">
+      <publishTime>11/04/2017 00:29:47</publishTime>
+    </File>
+    <File Include="Views/Admin/ManageContacts.cshtml">
+      <publishTime>11/16/2017 01:20:57</publishTime>
+    </File>
+    <File Include="Views/Admin/ManagePosts.cshtml">
+      <publishTime>11/15/2017 20:14:19</publishTime>
+    </File>
+    <File Include="Views/Admin/NewPost.cshtml">
+      <publishTime>10/26/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Views/Admin/Settings.cshtml">
+      <publishTime>11/12/2017 02:11:34</publishTime>
+    </File>
+    <File Include="Views/Home/ContactUs.cshtml">
+      <publishTime>10/19/2017 04:25:48</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>01/28/2018 04:06:40</publishTime>
+    </File>
+    <File Include="Views/Home/logIn.cshtml">
+      <publishTime>12/20/2017 07:07:11</publishTime>
+    </File>
+    <File Include="Views/Home/News.cshtml">
+      <publishTime>01/28/2018 05:10:47</publishTime>
+    </File>
+    <File Include="Views/Home/Recovery.cshtml">
+      <publishTime>10/15/2017 00:22:23</publishTime>
+    </File>
+    <File Include="Views/Home/Registration.cshtml">
+      <publishTime>10/20/2017 00:47:06</publishTime>
+    </File>
+    <File Include="Views/Shared/P_AdminPanel.cshtml">
+      <publishTime>01/28/2018 03:26:58</publishTime>
+    </File>
+    <File Include="Views/Shared/P_AnsComment.cshtml">
+      <publishTime>10/12/2017 20:49:43</publishTime>
+    </File>
+    <File Include="Views/Shared/P_Header.cshtml">
+      <publishTime>12/20/2017 07:06:27</publishTime>
+    </File>
+    <File Include="Views/Shared/P_RightBox.cshtml">
+      <publishTime>01/28/2018 05:14:10</publishTime>
+    </File>
+    <File Include="Views/Shared/P_UserPanel.cshtml">
+      <publishTime>10/21/2017 01:40:04</publishTime>
+    </File>
+    <File Include="Views/Shared/_Admin.cshtml">
+      <publishTime>12/20/2017 07:22:21</publishTime>
+    </File>
+    <File Include="Views/Shared/_Admin_Wide.cshtml">
+      <publishTime>10/27/2017 03:46:46</publishTime>
+    </File>
+    <File Include="Views/Shared/_index.cshtml">
+      <publishTime>12/19/2017 15:15:13</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>10/06/2017 20:47:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/28/2018 02:59:22</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

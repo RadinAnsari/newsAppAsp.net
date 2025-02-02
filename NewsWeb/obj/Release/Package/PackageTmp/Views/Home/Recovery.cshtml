@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Recovery</title>
+</head>
+<body>
+    <div style="text-align:center;margin:20%;font-family:Tahoma;padding:20px;margin-left:40%;">
+        @using (Html.BeginForm())
+        {
+            <table dir="rtl">
+                <tr>
+                    <td>نا کاربری</td>
+                    <td><input type="text" name="Txt_UserName" value="" /></td>
+                </tr>
+                <tr>
+                    <td>ایمیل</td>
+                    <td><input type="text" name="Txt_Email" value="" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="بازیابی" /></td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>

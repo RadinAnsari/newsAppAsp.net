@@ -1,0 +1,105 @@
+﻿@model NewsWeb.Models.Domain.Tbl_News
+
+@{
+    ViewBag.Title = "EditPost";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+    NewsWeb.Models.Domain.DataBaseNews db = new NewsWeb.Models.Domain.DataBaseNews();
+}
+@section js
+{
+    <script src="~/Scripts/ckeditor/ckeditor.js"></script>
+}
+
+
+@using (Html.BeginForm("EditPost", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div style="text-align:center;@ViewBag.style;">
+            @ViewBag.message
+        </div>
+
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Imge, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="Pic" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Title)
+                @Html.ValidationMessageFor(model => model.Title)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HeadTitle, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HeadTitle)
+                @Html.ValidationMessageFor(model => model.HeadTitle)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Text, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Text)
+                @Html.ValidationMessageFor(model => model.Text)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FullText, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.FullText, new { @class = "ckeditor" })
+                @Html.ValidationMessageFor(model => model.FullText)
+            </div>
+        </div>
+     
+
+<div class="form-group">
+    
+    @{
+    var qType = from a in db.Tbl_Category
+                 select a;
+}
+    @Html.LabelFor(model => model.Type, new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        <select name="Type">
+            @{
+            foreach (var item in qType)
+            {
+                if(Model.Type==item.Id.ToString())
+                {<option style="text-align:center;color:red;" selected value="@item.Id">@item.Title</option>}
+                else
+                { <option style="text-align:center;" value="@item.Id">@item.Title</option>}
+            }
+            }
+        </select>
+
+    </div>
+</div>
+
+
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.Type, new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Type)
+                    @Html.ValidationMessageFor(model => model.Type)
+                </div>
+            </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

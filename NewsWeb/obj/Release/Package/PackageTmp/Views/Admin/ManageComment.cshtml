@@ -1,0 +1,116 @@
+﻿@model IEnumerable<NewsWeb.Models.Domain.Tbl_Comment>
+
+@{
+    ViewBag.Title = "ManageComment";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+    NewsWeb.Models.Domain.DataBaseNews db = new NewsWeb.Models.Domain.DataBaseNews();
+}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .btn_green {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+</style>
+
+<table style="direction:ltr;font-size:8px;text-align:center;">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Text)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Confirm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Read)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        string x = "";
+        if (item.Read.Equals(true))
+        {
+            x += "Color:Black;";
+        }
+        else
+        {
+            x += "Color:Red;";
+
+        }
+        <tr style="@x">
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Confirm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Read)
+            </td>
+
+            <td>
+                @Html.ActionLink("DetailsComment", "DetailsComment", new { id = item.Id }, new { @class = "btn_green" }) |
+                @Html.ActionLink("Delete", "DeleteComment", new { id = item.Id }, new { @class = "btn_green" })
+            </td>
+        </tr>
+    }
+
+</table>

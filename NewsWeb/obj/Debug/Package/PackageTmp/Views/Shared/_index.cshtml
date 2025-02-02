@@ -1,0 +1,184 @@
+﻿@{
+    NewsWeb.Models.Repository.Rep_News rNews = new NewsWeb.Models.Repository.Rep_News();
+    NewsWeb.Models.Repository.Rep_Ads rAds = new NewsWeb.Models.Repository.Rep_Ads();
+    NewsWeb.Models.Repository.Rep_Category rCat = new NewsWeb.Models.Repository.Rep_Category();
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>پیش نمایش قالب خبری</title>
+
+    <link href="~/Content/Style2.css" rel="stylesheet" />
+    @*<script src="~/Scripts/jquery-3.2.1.min.js"></script>*@
+    <script src="~/Scripts/jquery-2.1.3.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/doc.js"></script>
+    <link rel="canonical" href="http://www.20script.ir">
+    <link rel="canonical" href="http://www.bistscript.ir">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".pageme tbody").quickPager({
+                pageSize: 1,
+                currentPage: 1,
+                holder: ".pager"
+            });
+        });
+    </script>
+
+    <style>
+        .NavBar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .NavBar ul li {
+                float: left;
+            }
+
+                .NavBar ul li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                    .NavBar ul li a:hover:not(.active) {
+                        background-color: #111;
+                    }
+
+        .NavBar .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="message" style="display: none;">
+        <div class="massage_box">
+            <a href="/Home/Index">صفحه اصلی</a>
+            @{
+                foreach (var item in rCat.get13NewsCat())
+                {
+                    <a href="/Home/Category/@item.Id">| @item.Title</a>
+                }
+            }
+        </div>
+    </div>
+
+    <!--هدر سایت-->
+    @Html.Partial("P_Header")
+
+    <!-- محتوای سایت -->
+    <div class="body_box">
+        <div class="body_box_bg">
+
+            <div class="box_left">
+                <div class="NavBar">
+                    <ul>
+                        @{
+                            foreach (var item in rCat.get13NewsCat())
+                            {
+                                <li ><a href="/Home/Category/@item.Id">@item.Title</a></li>
+                               
+                            }
+                        }
+                        <li style="float:right"><a class="active" href="#about">About</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="top_box_news">
+
+                    <div class="top_box_news_right">
+                        @{
+                            int counter = 0;
+                            foreach (var item in rNews.GetNewsNewerSlide())
+                            {
+                                counter++;
+                                <div id="slide@(counter)" style="display: none;">
+                                    <img src="~/Content/img/NewsPic/@item.Imge" width="146" height="110">
+                                    <b><a href="/Home/News/@item.Id">@item.Title</a></b><br>
+                                    @{
+                                if (item.Text.Count() <= 150)
+                                {
+                                    @item.Text;
+                                }
+
+                                else
+                                {
+                                    @item.Text.Substring(0, 150);
+                                }
+                                    }
+
+                                </div>
+                            }
+
+                        }
+
+                    </div>
+
+                    <div class="top_box_news_left">
+                        <p>پر بحث ترین ها</p>
+                        <ul class="top_news">
+                            @{
+                                foreach (var item in rNews.GetNewsByLike())
+                                {
+                                    <li><a href="/Home/News/@item.Id">@item.Title</a></li>
+                                }
+                            }
+
+                        </ul>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+
+                <div class="body_text">
+
+                    <div class="ads">
+                        @{
+                            foreach (var item in rAds.getAds())
+                            {
+                                <div><a href="@item.Link"><img src="@item.Image" alt="@item.Title" title="@item.Discription" /></a></div>
+                            }
+
+                        }
+                    </div>
+
+
+                    <!--Post box-->
+                    <div style="width:562px;">
+                        @RenderBody()
+                    </div>
+
+                    <!--end post box-->
+                    <div class="cls"></div>
+                </div>
+            </div>
+
+            <!--Box right-->
+            @Html.Partial("P_RightBox")
+
+            <div class="cls"></div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer_bg">
+            <p>Programmer:Radin</p>
+        </div>
+    </div>
+    @*<div style="visibility:hidden;display:none">
+            <a href="http://www.20script.ir">http://www.20script.ir</a>
+            <div>
+
+            </div>
+        </div>*@
+</body>
+</html>

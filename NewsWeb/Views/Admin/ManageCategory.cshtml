@@ -1,0 +1,102 @@
+﻿@model IEnumerable<NewsWeb.Models.Domain.Tbl_Category>
+
+@{
+    ViewBag.Title = "ManageCategory";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<style>
+    .table_d{
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .table_d th,td{
+        text-align:center;
+        padding:8px;
+    }
+
+    .table_d tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+        .table_d th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    .btn_black {
+        background-color: #808080; /* Green */
+        border: none;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20%;
+    }
+
+    .btn_green {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .img-min{
+        height:44px;
+        width:44px;
+    }
+</style>
+
+<p>
+    @Html.ActionLink("جدید", "CreatCategory", "Admin", FormMethod.Post, new { @class = "btn_black" })
+</p>
+
+<table class="table_d" style="direction:ltr;">
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParentId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParentId)
+        </td>
+        <td>
+            @if(@item.Image!=null)
+            {
+              @Html.DisplayFor(modelItem => item.Image)
+            <img src="/Content/img/CatPic/@item.Image" class="img-min" />   
+            }
+           
+        </td>
+        <td>
+            @Html.ActionLink("Add", "CreatCategory", new { id = item.Id }, new { @class = "btn_green" }) |
+            @Html.ActionLink("Edit", "EditCategory", new { id = item.Id }, new { @class = "btn_green" }) |
+            @Html.ActionLink("Delete", "DeleteCategory", new { id = item.Id }, new { @class = "btn_green" })
+        </td>
+    </tr>
+}
+
+</table>

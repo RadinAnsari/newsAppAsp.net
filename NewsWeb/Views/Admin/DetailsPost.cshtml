@@ -1,0 +1,156 @@
+﻿@model NewsWeb.Models.Domain.Tbl_News
+
+@{
+    ViewBag.Title = "DetailsPost";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<style>
+    .table_d {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 10px;
+    }
+
+        .table_d th, td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        .table_d tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table_d th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    .btn_black {
+        background-color: #808080; /* Green */
+        border: none;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20%;
+    }
+
+    .btn_green {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        border-radius: 50%;
+    }
+
+    .box_msg {
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        margin: 4px 2px;
+        border-radius: 6%;
+        background-color: #f2f2f2;
+        color: black;
+        border: 2px solid #555555;
+    }
+    .box_img{
+        height:100px;
+        width:100px;
+        border:2px groove #808080;
+    }
+</style>
+
+<div>
+
+    <dl class="dl-horizontal">
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.HeadTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeadTitle)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.FullText)
+        </dt>
+
+        <dd class="box_msg">
+            @Html.Raw(Model.FullText)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.Imge)
+        </dt>
+
+        <dd>
+            <img class="box_img" src="/Content/img/NewsPic/@Model.Imge" />
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.Visit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Visit)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.Like)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Like)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.DisLike)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisLike)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt class="btn_green">
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+    </dl>
+</div>

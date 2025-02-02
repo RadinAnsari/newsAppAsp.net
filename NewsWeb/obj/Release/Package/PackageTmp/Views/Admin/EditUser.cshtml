@@ -1,0 +1,66 @@
+﻿@model NewsWeb.Models.Domain.Tbl_Users
+
+@{
+    ViewBag.Title = "EditUser";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>ویرایش اطلاعات کاربری</h2>
+
+
+@using (Html.BeginForm("EditUser", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h2 style="text-align:center;@ViewBag.style">@ViewBag.message</h2>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            <input type="file" name="PicUser" />
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Discription, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Discription)
+            @Html.ValidationMessageFor(model => model.Discription)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Ncode, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Ncode)
+            @Html.ValidationMessageFor(model => model.Ncode)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Mobnumber, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Mobnumber)
+            @Html.ValidationMessageFor(model => model.Mobnumber)
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="ذخیره" class="btn btn-default" />
+        </div>
+    </div>
+}
+
+
+<script src="~/Scripts/jquery-2.1.3.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

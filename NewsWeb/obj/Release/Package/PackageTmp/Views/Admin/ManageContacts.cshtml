@@ -1,0 +1,103 @@
+﻿@model IEnumerable<NewsWeb.Models.Domain.Tbl_ContactUs>
+
+@{
+    ViewBag.Title = "ManageContacts";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<style>
+    .table_d {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 10px;
+    }
+
+        .table_d th, td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        .table_d tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table_d th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    .btn_black {
+        background-color: #808080; /* Green */
+        border: none;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20%;
+    }
+
+    .btn_green {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+</style>
+<div style="text-align:center;">
+    <p style="@ViewBag.style;">@ViewBag.message</p>
+</div>
+<table class="table_d">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Text)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "DetailsContact", new { id = item.Id }, new { @class = "btn_green" }) |
+                @Html.ActionLink("Delete", "DeleteContact", new { id = item.Id }, new { @class = "btn_green" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<script>
+    function myFunction() {
+        var id = model.ID; //if you want to pass ID parameter
+
+        var r = confirm("Press a button!");
+        if (r == true) {
+            window.location.href = '@Url.Action("DeleteContact", "Admin")/' + id;
+        } 
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>

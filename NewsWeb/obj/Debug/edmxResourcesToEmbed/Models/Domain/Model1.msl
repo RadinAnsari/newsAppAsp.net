@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="News_DBModelStoreContainer" CdmEntityContainer="DataBaseNews">
+    <EntitySetMapping Name="Tbl_Category">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_Category">
+        <MappingFragment StoreEntitySet="Tbl_Category">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Comment">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_Comment">
+        <MappingFragment StoreEntitySet="Tbl_Comment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NewsId" ColumnName="NewsId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Ip" ColumnName="Ip" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Confirm" ColumnName="Confirm" />
+          <ScalarProperty Name="Read" ColumnName="Read" />
+          <ScalarProperty Name="Like" ColumnName="Like" />
+          <ScalarProperty Name="Dislike" ColumnName="Dislike" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_ContactUs">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_ContactUs">
+        <MappingFragment StoreEntitySet="Tbl_ContactUs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_News">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_News">
+        <MappingFragment StoreEntitySet="Tbl_News">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="HeadTitle" ColumnName="HeadTitle" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="FullText" ColumnName="FullText" />
+          <ScalarProperty Name="Imge" ColumnName="Imge" />
+          <ScalarProperty Name="Visit" ColumnName="Visit" />
+          <ScalarProperty Name="Like" ColumnName="Like" />
+          <ScalarProperty Name="DisLike" ColumnName="DisLike" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_News_Likes">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_News_Likes">
+        <MappingFragment StoreEntitySet="Tbl_News_Likes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NewsId" ColumnName="NewsId" />
+          <ScalarProperty Name="UserIp" ColumnName="UserIp" />
+          <ScalarProperty Name="Like" ColumnName="Like" />
+          <ScalarProperty Name="Dislike" ColumnName="Dislike" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_R_News_Cat">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_R_News_Cat">
+        <MappingFragment StoreEntitySet="Tbl_R_News_Cat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CatID" ColumnName="CatID" />
+          <ScalarProperty Name="NewsID" ColumnName="NewsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Setting">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_Setting">
+        <MappingFragment StoreEntitySet="Tbl_Setting">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="MetaTage" ColumnName="MetaTage" />
+          <ScalarProperty Name="ShowConfComm" ColumnName="ShowConfComm" />
+          <ScalarProperty Name="DisableComment" ColumnName="DisableComment" />
+          <ScalarProperty Name="MaxUploadSize" ColumnName="MaxUploadSize" />
+          <ScalarProperty Name="CountNewsInPage" ColumnName="CountNewsInPage" />
+          <ScalarProperty Name="CountOfMemo" ColumnName="CountOfMemo" />
+          <ScalarProperty Name="CountNewer" ColumnName="CountNewer" />
+          <ScalarProperty Name="CountPopular" ColumnName="CountPopular" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Users">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_Users">
+        <MappingFragment StoreEntitySet="Tbl_Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Psw" ColumnName="Psw" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Access" ColumnName="Access" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Ncode" ColumnName="Ncode" />
+          <ScalarProperty Name="Mobnumber" ColumnName="Mobnumber" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="DateRegistration" ColumnName="DateRegistration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Adv">
+      <EntityTypeMapping TypeName="News_DBModel.Tbl_Adv">
+        <MappingFragment StoreEntitySet="Tbl_Adv">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

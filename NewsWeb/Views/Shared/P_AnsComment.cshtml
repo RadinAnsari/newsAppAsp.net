@@ -1,0 +1,28 @@
+﻿@model NewsWeb.Models.Domain.Tbl_Comment
+
+@using (Html.BeginForm("InsertAnsComment", "Home", FormMethod.Get))
+{
+    <input type="hidden" name="NewsId" value="@Model.NewsId" />
+    <input type="hidden" name="ParentId" value="@Model.ParentId" />
+    <table>
+        <tr>
+            <td>نام</td>
+            <td><input type="text" name="Name" value="" /></td>
+        </tr>
+        <tr>
+            <td>ایمیل</td>
+            <td><input type="text" name="Email" value="" /></td>
+        </tr>
+        <tr>
+            <td>عنوان</td>
+            <td><input type="text" name="Title" value="" /></td>
+        </tr>
+        <tr>
+            <td>متن</td>
+            <td><textarea name="Text" style="max-width:500px;min-width:350px;min-height:200px;"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="ارسال نظر" /></td>
+        </tr>
+    </table>
+}

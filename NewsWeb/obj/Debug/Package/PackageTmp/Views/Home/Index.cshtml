@@ -1,0 +1,76 @@
+﻿@model IEnumerable<NewsWeb.Models.Domain.Tbl_News>
+@using PagedList.Mvc;
+@using PagedList;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_index.cshtml";
+    NewsWeb.Models.Repository.Rep_News rNews = new NewsWeb.Models.Repository.Rep_News();
+}
+
+<style>
+    .pagination-container ul li {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10%;
+        width: 10px;
+    }
+
+    .pagination-container {
+        direction: ltr;
+    }
+</style>
+<div class="linkdoni">
+    <div class="title_linkdoni"><b>جدید ترین ها</b></div>
+    <ul class="link_box2">
+        @{
+            foreach (var item in rNews.GetNewsNewer())
+            {
+                <li><a href="/Home/News/@item.Id">@item.Title</a></li>
+            }
+        }
+
+
+    </ul>
+</div>
+
+
+
+<div class="postbox">
+    @{
+
+        foreach (var item in Model)
+        {
+
+    <!--post-->
+            <div class="shortstory">
+                <img src="~/Content/img/NewsPic/@item.Imge" width="60">
+                <b><a href="/Home/News/@item.Id">@item.Title</a></b><br>
+                @{
+            if (item.Text.Count() <= 110)
+            {  <span>@item.Text </span>}
+            else
+            {
+                <span>@item.Text.Substring(0, 110)...</span>
+            }
+                }
+
+                <div class="cls"></div>
+            </div>
+
+        }
+    }
+    <div>
+        @if (ViewBag.OnePageOfProducts != null)
+        {
+            @Html.PagedListPager((IPagedList)ViewBag.OnePageOfProducts, page => Url.Action("Index", new { page }))
+        }
+    </div>
+</div>

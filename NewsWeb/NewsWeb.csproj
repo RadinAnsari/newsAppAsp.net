@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{669D107F-DD7C-403A-B746-DCDE3647FE71}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NewsWeb</RootNamespace>
+    <AssemblyName>NewsWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CaptchaMvc, Version=2.5.0.0, Culture=neutral, PublicKeyToken=fe46ad421dd3b0e6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\Mvc 5\CaptchaMvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\packages\JetBrains.Annotations.8.0.5.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="reCaptcha">
+      <HintPath>..\packages\reCaptcha.AspNet.Mvc.1.2.3.0\lib\net45\reCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap-3.3.7\dist\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-3.3.7\dist\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\dist\js\npm.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\about.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\apple-touch-icon.png" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\brand\bootstrap-outline.svg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\brand\bootstrap-punchout.svg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\brand\bootstrap-solid.svg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\css\docs.min.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\css\src\docs.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\css\src\pygments-manni.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\flash\ZeroClipboard.swf" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\img\components.png" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\img\devices.png" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\img\expo-lyft.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\img\expo-newsweek.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\img\expo-riot.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\img\expo-vogue.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\img\sass-less.png" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\customize.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\docs.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\raw-files.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\src\application.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\src\customizer.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\anchor.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\autoprefixer.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\Blob.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\FileSaver.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\holder.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\jquery.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\jszip.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\less.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\uglify.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\js\vendor\ZeroClipboard.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\browser-bugs.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\components.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\css.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\customize.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\js\bootstrap.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\js\npm.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\blog\blog.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\blog\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\carousel\carousel.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\carousel\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\cover\cover.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\cover\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\dashboard\dashboard.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\dashboard\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\grid\grid.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\grid\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\jumbotron-narrow\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\jumbotron-narrow\jumbotron-narrow.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\jumbotron\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\jumbotron\jumbotron.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\justified-nav\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\justified-nav\justified-nav.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\navbar-fixed-top\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\navbar-fixed-top\navbar-fixed-top.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\navbar-static-top\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\navbar-static-top\navbar-static-top.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\navbar\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\navbar\navbar.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\non-responsive\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\non-responsive\non-responsive.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\offcanvas\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\offcanvas\offcanvas.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\offcanvas\offcanvas.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\blog.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\carousel.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\cover.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\dashboard.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\equal-height-columns.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\grid.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\jumbotron-narrow.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\jumbotron.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\justified-nav.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\navbar-fixed.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\navbar-static.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\navbar.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\non-responsive.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\offcanvas.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\sign-in.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\starter-template.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\sticky-footer-navbar.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\sticky-footer.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\screenshots\theme.jpg" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\signin\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\signin\signin.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\starter-template\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\starter-template\starter-template.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\sticky-footer-navbar\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\sticky-footer-navbar\sticky-footer-navbar.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\sticky-footer\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\sticky-footer\sticky-footer.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\theme\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\theme\theme.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\tooltip-viewport\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\tooltip-viewport\tooltip-viewport.css" />
+    <Content Include="Content\bootstrap-3.3.7\docs\examples\tooltip-viewport\tooltip-viewport.js" />
+    <Content Include="Content\bootstrap-3.3.7\docs\favicon.ico" />
+    <Content Include="Content\bootstrap-3.3.7\docs\getting-started.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\javascript.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\migration.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\robots.txt" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\ads.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\alerts.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\badges.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\breadcrumbs.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\button-dropdowns.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\button-groups.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\dropdowns.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\glyphicons.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\input-groups.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\jumbotron.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\labels.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\list-group.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\media.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\navbar.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\navs.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\page-header.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\pagination.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\panels.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\progress-bars.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\responsive-embed.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\thumbnails.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\components\wells.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\buttons.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\code.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\forms.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\grid.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\helpers.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\images.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\less.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\overview.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\responsive-utilities.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\sass.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\tables.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\css\type.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\customizer-variables.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\footer.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\accessibility.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\browser-device-support.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\community.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\disabling-responsiveness.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\download.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\examples.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\grunt.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\license.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\template.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\third-party-support.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\tools.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\translations.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\getting-started\whats-included.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\header.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\affix.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\alerts.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\buttons.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\carousel.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\collapse.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\dropdowns.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\modal.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\overview.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\popovers.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\scrollspy.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\tabs.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\tooltips.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\js\transitions.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\about.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\components.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\css.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\customize.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\getting-started.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\javascript.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\main.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_includes\nav\migration.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_layouts\default.html" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_layouts\home.html" />
+    <Content Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap-3.3.7\Gruntfile.js" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\bs-commonjs-generator.js" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\bs-lessdoc-parser.js" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\bs-raw-files-generator.js" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\change-version.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\affix.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\alert.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\button.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\carousel.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\collapse.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\dropdown.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\modal.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\popover.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\scrollspy.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tab.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\index.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\affix.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\alert.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\button.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\carousel.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\collapse.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\dropdown.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\modal.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\phantom.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\popover.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\scrollspy.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\tab.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\tooltip.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\vendor\jquery.min.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\vendor\qunit.css" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\vendor\qunit.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\affix-with-sticky-footer.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\affix.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\alert.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\button.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\carousel.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\collapse.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\dropdown.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\modal.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\popover.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\scrollspy.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\tab.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\visual\tooltip.html" />
+    <Content Include="Content\bootstrap-3.3.7\js\tooltip.js" />
+    <Content Include="Content\bootstrap-3.3.7\js\transition.js" />
+    <Content Include="Content\bootstrap-3.3.7\package.js" />
+    <Content Include="Content\img\109603_997.jpg" />
+    <Content Include="Content\img\109835_297.jpg" />
+    <Content Include="Content\img\109902_540.jpg" />
+    <Content Include="Content\img\109986_192.jpg" />
+    <Content Include="Content\img\109988_396.jpg" />
+    <Content Include="Content\img\109991_841.jpg" />
+    <Content Include="Content\img\bg.png" />
+    <Content Include="Content\img\bgload.png" />
+    <Content Include="Content\img\bgnews_top.jpg" />
+    <Content Include="Content\img\bg_footer.jpg" />
+    <Content Include="Content\img\bg_load.jpg" />
+    <Content Include="Content\img\bg_news_top.jpg" />
+    <Content Include="Content\img\CatPic\user-login-icon-29.png" />
+    <Content Include="Content\img\Contact_us_logo.png" />
+    <Content Include="Content\img\feedback.png" />
+    <Content Include="Content\img\footer.jpg" />
+    <Content Include="Content\img\header.jpg" />
+    <Content Include="Content\img\header.png" />
+    <Content Include="Content\img\home.png" />
+    <Content Include="Content\img\ico_top.png" />
+    <Content Include="Content\img\img_01-1.jpg" />
+    <Content Include="Content\img\img_01-2.jpg" />
+    <Content Include="Content\img\img_01-3.jpg" />
+    <Content Include="Content\img\img_01-4.jpg" />
+    <Content Include="Content\img\img_01.jpg" />
+    <Content Include="Content\img\index.html" />
+    <Content Include="Content\img\li-1.jpg" />
+    <Content Include="Content\img\li-2.jpg" />
+    <Content Include="Content\img\li-3.jpg" />
+    <Content Include="Content\img\li-4.jpg" />
+    <Content Include="Content\img\n00134155-s.jpg" />
+    <Content Include="Content\img\n00185162-t.jpg" />
+    <Content Include="Content\img\n00185209-t.jpg" />
+    <Content Include="Content\img\LogOut.png" />
+    <Content Include="Content\img\registration.png" />
+    <Content Include="Content\img\rss.png" />
+    <Content Include="Content\img\stu.gif" />
+    <Content Include="Content\img\title-link.jpg" />
+    <Content Include="Content\img\title-link2.jpg" />
+    <Content Include="Content\img\UserPic\Admin.jpeg" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\Style2.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\Domain\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Domain\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\ckeditor\ckeditor.pack" />
+    <Content Include="Scripts\ckeditor\ckeditor.php" />
+    <Content Include="Scripts\ckeditor\ckeditor_php4.php" />
+    <Content Include="Scripts\ckeditor\ckeditor_php5.php" />
+    <Content Include="Content\bootstrap-3.3.7\.editorconfig" />
+    <Content Include="Content\bootstrap-3.3.7\.gitattributes" />
+    <Content Include="Content\bootstrap-3.3.7\.gitignore" />
+    <Content Include="Content\bootstrap-3.3.7\.hound.yml" />
+    <Content Include="Content\bootstrap-3.3.7\.travis.yml" />
+    <Content Include="Content\bootstrap-3.3.7\bower.json" />
+    <Content Include="Content\bootstrap-3.3.7\CHANGELOG.md" />
+    <Content Include="Content\bootstrap-3.3.7\CNAME" />
+    <Content Include="Content\bootstrap-3.3.7\composer.json" />
+    <Content Include="Content\bootstrap-3.3.7\CONTRIBUTING.md" />
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\dist\css\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap-3.3.7\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\bootstrap-3.3.7\docs\assets\css\docs.min.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\css\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap-3.3.7\docs\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\bootstrap-3.3.7\docs\LICENSE" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_data\browser-bugs.yml" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_data\browser-features.yml" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_data\core-team.yml" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_data\glyphicons.yml" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_data\sass-team.yml" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_data\showcase.yml" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_data\translations.yml" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_plugins\bridge.rb" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_plugins\bugify.rb" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_pug\customizer-nav.pug" />
+    <Content Include="Content\bootstrap-3.3.7\docs\_pug\customizer-variables.pug" />
+    <Content Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\bootstrap-3.3.7\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\bootstrap-3.3.7\Gemfile" />
+    <Content Include="Content\bootstrap-3.3.7\Gemfile.lock" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\.jshintrc" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\configBridge.json" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\npm-shrinkwrap.json" />
+    <Content Include="Content\bootstrap-3.3.7\grunt\sauce_browsers.yml" />
+    <Content Include="Content\bootstrap-3.3.7\ISSUE_TEMPLATE.md" />
+    <Content Include="Content\bootstrap-3.3.7\js\.jscsrc" />
+    <Content Include="Content\bootstrap-3.3.7\js\.jshintrc" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\README.md" />
+    <Content Include="Content\bootstrap-3.3.7\js\tests\unit\.jshintrc" />
+    <Content Include="Content\bootstrap-3.3.7\less\.csscomb.json" />
+    <Content Include="Content\bootstrap-3.3.7\less\.csslintrc" />
+    <Content Include="Content\bootstrap-3.3.7\less\alerts.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\badges.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\bootstrap.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\breadcrumbs.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\button-groups.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\buttons.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\carousel.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\close.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\code.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\component-animations.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\dropdowns.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\forms.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\glyphicons.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\grid.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\input-groups.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\jumbotron.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\labels.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\list-group.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\media.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\alerts.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\background-variant.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\border-radius.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\buttons.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\center-block.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\clearfix.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\forms.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\gradients.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\grid-framework.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\grid.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\hide-text.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\image.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\labels.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\list-group.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\nav-divider.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\nav-vertical-align.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\opacity.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\pagination.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\panels.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\progress-bar.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\reset-filter.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\reset-text.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\resize.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\responsive-visibility.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\size.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\tab-focus.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\table-row.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\text-emphasis.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\text-overflow.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\mixins\vendor-prefixes.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\modals.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\navbar.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\navs.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\normalize.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\pager.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\pagination.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\panels.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\popovers.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\print.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\progress-bars.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\responsive-embed.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\responsive-utilities.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\scaffolding.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\tables.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\theme.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\thumbnails.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\tooltip.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\type.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\utilities.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\variables.less" />
+    <Content Include="Content\bootstrap-3.3.7\less\wells.less" />
+    <Content Include="Content\bootstrap-3.3.7\LICENSE" />
+    <Content Include="Content\bootstrap-3.3.7\nuget\bootstrap.less.nuspec" />
+    <Content Include="Content\bootstrap-3.3.7\nuget\bootstrap.nuspec" />
+    <Content Include="Content\bootstrap-3.3.7\nuget\MyGet.ps1" />
+    <Content Include="Content\bootstrap-3.3.7\package.json" />
+    <Content Include="Content\bootstrap-3.3.7\README.md" />
+    <Content Include="Content\bootstrap-3.3.7\_config.yml" />
+    <EntityDeploy Include="Models\Domain\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Domain\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\radin.pubxml" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Models\Repository\XSLTFile1.xslt" />
+    <Content Include="Scripts\ckeditor\adapters\jquery.js" />
+    <Content Include="Scripts\ckeditor\CHANGES.html" />
+    <Content Include="Scripts\ckeditor\ckeditor.asp" />
+    <Content Include="Scripts\ckeditor\ckeditor.js" />
+    <Content Include="Scripts\ckeditor\ckeditor_basic.js" />
+    <Content Include="Scripts\ckeditor\ckeditor_basic_source.js" />
+    <Content Include="Scripts\ckeditor\ckeditor_source.js" />
+    <Content Include="Scripts\ckeditor\config.js" />
+    <Content Include="Scripts\ckeditor\contents.css" />
+    <Content Include="Scripts\ckeditor\images\spacer.gif" />
+    <Content Include="Scripts\ckeditor\INSTALL.html" />
+    <Content Include="Scripts\ckeditor\lang\af.js" />
+    <Content Include="Scripts\ckeditor\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\lang\bn.js" />
+    <Content Include="Scripts\ckeditor\lang\bs.js" />
+    <Content Include="Scripts\ckeditor\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\lang\en-au.js" />
+    <Content Include="Scripts\ckeditor\lang\en-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\en-gb.js" />
+    <Content Include="Scripts\ckeditor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\lang\es.js" />
+    <Content Include="Scripts\ckeditor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\lang\eu.js" />
+    <Content Include="Scripts\ckeditor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\lang\fo.js" />
+    <Content Include="Scripts\ckeditor\lang\fr-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\lang\gl.js" />
+    <Content Include="Scripts\ckeditor\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\lang\hi.js" />
+    <Content Include="Scripts\ckeditor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\lang\id.js" />
+    <Content Include="Scripts\ckeditor\lang\is.js" />
+    <Content Include="Scripts\ckeditor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\lang\ka.js" />
+    <Content Include="Scripts\ckeditor\lang\km.js" />
+    <Content Include="Scripts\ckeditor\lang\ko.js" />
+    <Content Include="Scripts\ckeditor\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\lang\mn.js" />
+    <Content Include="Scripts\ckeditor\lang\ms.js" />
+    <Content Include="Scripts\ckeditor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\lang\sr-latn.js" />
+    <Content Include="Scripts\ckeditor\lang\sr.js" />
+    <Content Include="Scripts\ckeditor\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\lang\th.js" />
+    <Content Include="Scripts\ckeditor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\lang\zh.js" />
+    <Content Include="Scripts\ckeditor\lang\_languages.js" />
+    <Content Include="Scripts\ckeditor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\LICENSE.html" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Scripts\ckeditor\plugins\adobeair\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\ajax\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\autogrow\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\bbcode\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Scripts\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\devtools\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Scripts\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Scripts\ckeditor\plugins\docprops\dialogs\docprops.js" />
+    <Content Include="Scripts\ckeditor\plugins\docprops\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Scripts\ckeditor\plugins\iframedialog\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\images\anchor.gif" />
+    <Content Include="Scripts\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Scripts\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Scripts\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\dialogs\placeholder.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\placeholder.gif" />
+    <Content Include="Scripts\ckeditor\plugins\placeholder\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\preview\preview.html" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\stylesheetparser\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\styles\styles\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\tableresize\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Scripts\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\plugin.js" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\uicolor.gif" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="Scripts\ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Scripts\ckeditor\plugins\xml\plugin.js" />
+    <Content Include="Scripts\ckeditor\skins\kama\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\kama\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\kama\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="Scripts\ckeditor\skins\kama\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\kama\templates.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\office2003\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\office2003\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\office2003\templates.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\v2\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\icons_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\dialog_sides_rtl.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\mini.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\sprites.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\sprites_ie6.png" />
+    <Content Include="Scripts\ckeditor\skins\v2\images\toolbar_start.gif" />
+    <Content Include="Scripts\ckeditor\skins\v2\skin.js" />
+    <Content Include="Scripts\ckeditor\skins\v2\templates.css" />
+    <Content Include="Scripts\ckeditor\themes\default\theme.js" />
+    <Content Include="Scripts\doc.js" />
+    <Content Include="Scripts\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <Content Include="Views\Shared\_index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\P_RightBox.cshtml" />
+    <Content Include="Views\Shared\P_Header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_Adv.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_Category.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_Comment.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_ContactUs.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_News.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_News_Likes.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_R_News_Cat.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_Setting.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Domain\Tbl_Users.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MetaData\MetaData_ContactUs.cs" />
+    <Compile Include="Models\MetaData\Metadata_News.cs" />
+    <Compile Include="Models\MetaData\MetaData_Registration.cs" />
+    <Compile Include="Models\Repository\Like.cs" />
+    <Compile Include="Models\Repository\Rep_Ads.cs" />
+    <Compile Include="Models\Repository\Rep_Category.cs" />
+    <Compile Include="Models\Repository\Rep_Comment.cs" />
+    <Compile Include="Models\Repository\Rep_News.cs" />
+    <Compile Include="Models\Repository\Rep_Setting.cs" />
+    <Compile Include="Models\Utility\Utility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Home\News.cshtml" />
+    <Content Include="Views\Shared\P_AnsComment.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
+    <Content Include="Views\Home\logIn.cshtml" />
+    <Content Include="Views\Home\Recovery.cshtml" />
+    <Content Include="Views\Shared\_Admin.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\EditPassword.cshtml" />
+    <Content Include="Views\Home\Registration.cshtml" />
+    <Content Include="Views\Admin\EditUser.cshtml" />
+    <Content Include="Views\Admin\EditEmail.cshtml" />
+    <Content Include="Views\Shared\P_AdminPanel.cshtml" />
+    <Content Include="Views\Shared\P_UserPanel.cshtml" />
+    <Content Include="Views\Admin\ManagePosts.cshtml" />
+    <Content Include="Views\Admin\NewPost.cshtml" />
+    <Content Include="Views\Admin\DetailsComment.cshtml" />
+    <Content Include="Views\Shared\_Admin_Wide.cshtml" />
+    <Content Include="Views\Admin\ManageComment.cshtml" />
+    <Content Include="Views\Admin\EditPost.cshtml" />
+    <Content Include="Views\Admin\ManageCategory.cshtml" />
+    <Content Include="Views\Admin\CreatCategory.cshtml" />
+    <Content Include="Views\Admin\EditCategory.cshtml" />
+    <Content Include="Views\Admin\ManageContacts.cshtml" />
+    <Content Include="Views\Admin\DetailsContact.cshtml" />
+    <Content Include="Views\Admin\Settings.cshtml" />
+    <Content Include="Views\Admin\DetailsPost.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\img\NewsPic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4531</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4531/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

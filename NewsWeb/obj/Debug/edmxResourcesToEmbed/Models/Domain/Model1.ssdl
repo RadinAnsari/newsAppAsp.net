@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="News_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'News_DB.dbo.Tbl_Adv' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Tbl_Adv">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="Discription" />
+      <PropertyRef Name="Image" />
+      <PropertyRef Name="Link" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="DateStart" />
+      <PropertyRef Name="DateEnd" />
+      <PropertyRef Name="Enable" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Discription" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Link" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="DateStart" Type="date" Nullable="false" />
+    <Property Name="DateEnd" Type="date" Nullable="false" />
+    <Property Name="Enable" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Tbl_Comment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NewsId" Type="int" Nullable="false" />
+    <Property Name="ParentId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Ip" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Confirm" Type="bit" Nullable="false" />
+    <Property Name="Read" Type="bit" Nullable="false" />
+    <Property Name="Like" Type="int" Nullable="false" />
+    <Property Name="Dislike" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_ContactUs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_News">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="HeadTitle" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="FullText" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Imge" Type="nvarchar" MaxLength="255" />
+    <Property Name="Visit" Type="bigint" Nullable="false" />
+    <Property Name="Like" Type="int" Nullable="false" />
+    <Property Name="DisLike" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_News_Likes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NewsId" Type="int" Nullable="false" />
+    <Property Name="UserIp" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Like" Type="bit" Nullable="false" />
+    <Property Name="Dislike" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_R_News_Cat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CatID" Type="int" Nullable="false" />
+    <Property Name="NewsID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Setting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Discription" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="MetaTage" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="ShowConfComm" Type="bit" Nullable="false" />
+    <Property Name="DisableComment" Type="bit" Nullable="false" />
+    <Property Name="MaxUploadSize" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="CountNewsInPage" Type="int" Nullable="false" />
+    <Property Name="CountOfMemo" Type="int" Nullable="false" />
+    <Property Name="CountNewer" Type="int" Nullable="false" />
+    <Property Name="CountPopular" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tbl_Users">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Psw" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Access" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Discription" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Image" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Ncode" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Mobnumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="Enable" Type="bit" Nullable="false" />
+    <Property Name="DateRegistration" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Tbl_Category_Tbl_Category">
+    <End Role="Tbl_Category" Type="Self.Tbl_Category" Multiplicity="1" />
+    <End Role="Tbl_Category1" Type="Self.Tbl_Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tbl_Category1">
+        <PropertyRef Name="ParentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_Comment_Tbl_News">
+    <End Role="Tbl_News" Type="Self.Tbl_News" Multiplicity="1" />
+    <End Role="Tbl_Comment" Type="Self.Tbl_Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_News">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tbl_Comment">
+        <PropertyRef Name="NewsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_News_Likes_Tbl_News">
+    <End Role="Tbl_News" Type="Self.Tbl_News" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Tbl_News_Likes" Type="Self.Tbl_News_Likes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_News">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tbl_News_Likes">
+        <PropertyRef Name="NewsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_R_News_Cat_Tbl_Category">
+    <End Role="Tbl_Category" Type="Self.Tbl_Category" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Tbl_R_News_Cat" Type="Self.Tbl_R_News_Cat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tbl_R_News_Cat">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tbl_R_News_Cat_Tbl_News">
+    <End Role="Tbl_News" Type="Self.Tbl_News" Multiplicity="1" />
+    <End Role="Tbl_R_News_Cat" Type="Self.Tbl_R_News_Cat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tbl_News">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Tbl_R_News_Cat">
+        <PropertyRef Name="NewsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="News_DBModelStoreContainer">
+    <EntitySet Name="Tbl_Category" EntityType="Self.Tbl_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Comment" EntityType="Self.Tbl_Comment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_ContactUs" EntityType="Self.Tbl_ContactUs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_News" EntityType="Self.Tbl_News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_News_Likes" EntityType="Self.Tbl_News_Likes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_R_News_Cat" EntityType="Self.Tbl_R_News_Cat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Setting" EntityType="Self.Tbl_Setting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Users" EntityType="Self.Tbl_Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Adv" EntityType="Self.Tbl_Adv" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Tbl_Adv].[Id] AS [Id], 
+    [Tbl_Adv].[Title] AS [Title], 
+    [Tbl_Adv].[Discription] AS [Discription], 
+    [Tbl_Adv].[Image] AS [Image], 
+    [Tbl_Adv].[Link] AS [Link], 
+    [Tbl_Adv].[Date] AS [Date], 
+    [Tbl_Adv].[DateStart] AS [DateStart], 
+    [Tbl_Adv].[DateEnd] AS [DateEnd], 
+    [Tbl_Adv].[Enable] AS [Enable]
+    FROM [dbo].[Tbl_Adv] AS [Tbl_Adv]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Tbl_Category_Tbl_Category" Association="Self.FK_Tbl_Category_Tbl_Category">
+      <End Role="Tbl_Category" EntitySet="Tbl_Category" />
+      <End Role="Tbl_Category1" EntitySet="Tbl_Category" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_Comment_Tbl_News" Association="Self.FK_Tbl_Comment_Tbl_News">
+      <End Role="Tbl_News" EntitySet="Tbl_News" />
+      <End Role="Tbl_Comment" EntitySet="Tbl_Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_News_Likes_Tbl_News" Association="Self.FK_Tbl_News_Likes_Tbl_News">
+      <End Role="Tbl_News" EntitySet="Tbl_News" />
+      <End Role="Tbl_News_Likes" EntitySet="Tbl_News_Likes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_R_News_Cat_Tbl_Category" Association="Self.FK_Tbl_R_News_Cat_Tbl_Category">
+      <End Role="Tbl_Category" EntitySet="Tbl_Category" />
+      <End Role="Tbl_R_News_Cat" EntitySet="Tbl_R_News_Cat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tbl_R_News_Cat_Tbl_News" Association="Self.FK_Tbl_R_News_Cat_Tbl_News">
+      <End Role="Tbl_News" EntitySet="Tbl_News" />
+      <End Role="Tbl_R_News_Cat" EntitySet="Tbl_R_News_Cat" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

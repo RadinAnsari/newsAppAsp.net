@@ -1,0 +1,204 @@
+﻿@{
+    NewsWeb.Models.Repository.Rep_News rNews = new NewsWeb.Models.Repository.Rep_News();
+}
+<style>
+    .box_news_i a {
+        text-decoration: none;
+    }
+</style>
+<div class="box_right">
+
+    <!-- jquery - tab -->
+    <table border="0" cellpadding="0" cellspacing="0" class="pageme">
+
+        <tbody>
+            <tr class="page1" style="display: table-row;">
+                <td>
+                    <div class="title_more0" style="background:url(~/Content/img/img_01-1.jpg)"><b>خبر های ویژه</b></div>
+                    <div class="pad">
+
+                        <ul class="box_news_i">
+                            @{
+                                if (rNews.GetSpNews() != null)
+                                {
+                                    foreach (var item in rNews.GetSpNews())
+                                    {
+
+                                        <li>
+                                            <a href="/Home/News/@item.Id" class="ClsTxtdeco">
+                                                <img src="~/Content/img/NewsPic/@item.Imge" width="60" height="45">
+                                                @{
+                                        if (item.Text.Count() <= 70)
+                                        {
+                                            <span>@item.Text.Substring(0, item.Text.Count())</span>
+                                        }
+                                        else
+                                        {
+                                            <span>@item.Text.Substring(0, 70) ...</span>
+                                        }
+
+                                                }
+                                            </a>
+                                        </li>
+                                    }
+                                }
+
+                            }
+
+                        </ul>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="page2" style="display: none;">
+                <td>
+                    <div class="title_more0" style="background:url(~/Content/img/img_01-2.jpg)"><b>آخرین اخبار سیاسی</b></div>
+                    <div class="pad">
+
+                        <ul class="box_news_i">
+                            <li>
+                                <img src="~/Content/img/n00185209-t.jpg" width="60" height="45">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+
+                            <li>
+                                <img src="~/Content/img/n00185209-t.jpg" width="60" height="45">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+
+                            <li>
+                                <img src="~/Content/img/n00185209-t.jpg" width="60" height="45">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr class="page3" style="display: none;">
+                <td>
+                    <div class="title_more0" style="background:url(~/Content/img/img_01-3.jpg)"><b>آخرین اخبار اقتصادی</b></div>
+                    <div class="pad">
+
+                        <ul class="box_news_i">
+                            <li>
+                                <img src="~/Content/img/n00134155-s.jpg" width="60">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+
+                            <li>
+                                <img src="~/Content/img/n00134155-s.jpg" width="60">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+
+                            <li>
+                                <img src="~/Content/img/n00134155-s.jpg" width="60">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr class="page4" style="display: none;">
+                <td>
+                    <div class="title_more0" style="background:url(~/Content/img/img_01-4.jpg)"><b>آخرین اخبار حوادث</b></div>
+                    <div class="pad">
+
+                        <ul class="box_news_i">
+                            <li>
+                                <img src="~/Content/img/n00134155-s.jpg" width="60">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+
+                            <li>
+                                <img src="~/Content/img/n00134155-s.jpg" width="60">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+
+                            <li>
+                                <img src="~/Content/img/n00134155-s.jpg" width="60">
+                                متاسفانه با پیگیری کمیته حمایت از انقلاب اسلامی مردم فلسطین زیر ...
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="pager"></div>
+    <div class="cls"></div>
+
+    <div class="title_more"><b>دسته بندی</b></div>
+    <div class="pad">
+
+        <ul class="link_box1">
+            @addCategory()
+        </ul>
+
+    </div>
+    <div class="title_more"><b>پربازدیدترین ها</b></div><div class="pad">
+
+        <ul class="link_box1">
+
+            @{
+
+                foreach (var item in rNews.GetNewsByVisit())
+                {
+                    <li><a href="/Home/News/@item.Id">@item.Title</a></li>
+                }
+            }
+
+        </ul>
+
+    </div>
+</div>
+
+
+@helper addCategory(int ParentID = 1)
+{
+
+    NewsWeb.Models.Repository.Rep_Category rCategory = new NewsWeb.Models.Repository.Rep_Category();
+    foreach (var item in rCategory.getAllCategory().Where(a => a.ParentId.Equals(1)))
+    {
+        <ul>
+            @{
+
+                <li>
+                    <a href="/Home/Category/@item.Id">@item.Title</a>
+                    @AddChild(item.Id)
+                </li>
+
+            }
+        </ul>
+    }
+
+}
+
+@helper AddChild(int ParentID)
+{
+    NewsWeb.Models.Repository.Rep_Category rCategory = new NewsWeb.Models.Repository.Rep_Category();
+    if (rCategory.getAllCategory().Where(a => a.ParentId.Equals(ParentID)).Count() > 0)
+    {
+        <div style="margin-right:15px;">
+            <ul>
+
+                @foreach (var item in rCategory.getAllCategory().Where(a => a.ParentId.Equals(ParentID)).OrderBy(a => a.ParentId))
+                {
+                    <li>
+                        <a href="/Home/Category/@item.Id">@item.Title</a>
+                        @*@Html.Raw(HttpUtility.HtmlDecode(item.Id.ToString()))*@
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+
+}
